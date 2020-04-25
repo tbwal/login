@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>regitster</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet"  type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+<head>
+<body>
+	<div class="zong">
+		<div class="zhanghao"><p class="zhyy">帐号登录</p></div>
+		<div class="saoma"><p class="smyy">扫码登录</p></div>
+		<div class="fenge"></div>
+		
+		<div class="zhang">
+			<form action="jingdong.html" method="get">
+			<div class="yhkong"><i class="fa fa-user-circle-o" style="color:#999999; position:absolute; top:12px;left:10px;"></i></div>
+			<div class="yh"><input id="yhm" type="text"  autocomplete="off" name="username" placeholder="&nbsp;&nbsp;输入用户名"/></div>
+			<div class="mimakong"><i class="fa fa-lock" style="color:#999999; position:absolute; top:12px;left:13px;"></i></div>
+			<div class="mima"><input id="mima" type="password"  autocomplete="off" name="password" placeholder="&nbsp;&nbsp;输入密码"/></div>
+			<div class="forget"><p class="forg">忘记密码</p></div>
+			<div class="denglu"><button class="dlanniu" type="submit"><p class="deng">登录</p></button></div>
+			<div class="zhuce"><p class="forg">立即注册 ></p></div>
+			</form>
+		</div>
+		<div class="sao">
+			<div class="erweima"><img src="erweima.png"/></div>
+			<div class="zhuce"><p class="forg">立即注册 ></p></div>
+		</div>
+	</div>
+	<div class="zhezhao1"></div>
+	<div class="zhezhao2"></div>
+	<p class="tishi">请将光标移动到扫码登录上</p>
+	<script>
+   var  zhyy = document.getElementsByClassName('zhyy')[0],
+        smyy = document.getElementsByClassName('smyy')[0],
+        zhang = document.getElementsByClassName('zhang')[0],
+      	sao = document.getElementsByClassName('sao')[0];
+  zhyy.addEventListener('mousemove', function () {
+  zhang.style.left ='0px';
+  sao.style.left = '300px';  
+}, false);
+   smyy.addEventListener('mousemove', function () {
+  zhang.style.left ='-300px';
+  sao.style.left =' 0px';
+}, false);
+	</script>
+</body>
+</html>
